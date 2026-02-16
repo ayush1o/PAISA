@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investment Platform</title>
+<nav class="navbar">
+    <div class="logo">PAISA</div>
+    <div class="auth-buttons">
+        <a href="#" class="login">Login</a>
+        <a href="#" class="signup">Sign Up</a>
+    </div>
+</nav>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter', sans-serif;
+}
+
+body{
+    background:#f6f6f6;
+    color:#222;
+}
+
+/* ---------- NAVBAR ---------- */
+
+/* ---------- NAVBAR ---------- */
+
+.navbar{
+    background:white;
+    padding:18px 8%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:1px solid #eee;
+}
+
+/* ============================= */
+/* MOBILE + TABLET RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 1024px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        gap:40px;
+    }
+
+    .hero img{
+        width:280px;
+    }
+
+    .hero-text h1{
+        font-size:36px;
+    }
+
+    .features{
+        justify-content:center;
+    }
+}
+
+
+/* MOBILE VIEW */
+@media (max-width: 768px){
+
+    /* Navbar */
+    .navbar{
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .nav-links{
+        width:100%;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:20px;
+        margin-top:10px;
+    }
+
+    .auth-buttons{
+        width:100%;
+        justify-content:center;
+    }
+
+    /* Hero */
+    .hero{
+        padding:50px 6%;
+    }
+
+    .hero-text h1{
+        font-size:28px;
+        line-height:1.3;
+    }
+
+    /* Cards */
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:90%;
+    }
+
+    /* CTA */
+    .cta{
+        flex-direction:column;
+        text-align:center;
+        gap:25px;
+        padding:35px;
+    }
+
+    .cta img{
+        width:100%;
+        max-width:260px;
+    }
+
+    /* Footer */
+    footer{
+        text-align:center;
+    }
+}
+
+
+/* SMALL PHONES */
+@media (max-width: 480px){
+
+    .hero-text h1{
+        font-size:24px;
+    }
+
+    .btn{
+        display:block;
+        margin:15px auto;
+    }
+
+    .link{
+        display:block;
+        margin-top:10px;
+    }
+
+}
+
+
+/* Logo */
+.logo{
+    font-size:24px;
+    font-weight:600;
+    color:#2e7d32;
+    letter-spacing:1px;
+}
+
+/* Center Links */
+.nav-links{
+    display:flex;
+    gap:35px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#444;
+    font-weight:500;
+}
+
+.nav-links a.active{
+    color:#2e7d32;
+    border-bottom:3px solid #2e7d32;
+    padding-bottom:6px;
+}
+
+/* Login Signup */
+.auth-buttons{
+    display:flex;
+    gap:15px;
+    align-items:center;
+}
+
+.login{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+.signup{
+    text-decoration:none;
+    background:#2e7d32;
+    color:white;
+    padding:10px 18px;
+    border-radius:25px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.signup:hover{
+    background:#256628;
+}
+
+
+nav{
+    background:white;
+    padding:18px 8%;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    border-bottom:1px solid #eee;
+}
+
+nav a{
+    text-decoration:none;
+    color:#444;
+    font-weight:500;
+}
+
+nav a.active{
+    color:#2e7d32;
+    border-bottom:3px solid #2e7d32;
+    padding-bottom:6px;
+}
+
+/* ---------- HERO SECTION ---------- */
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px 8%;
+    background:#fafafa;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    max-width:520px;
+}
+
+.hero-text h1{
+    font-size:48px;
+    font-weight:500;
+    margin-bottom:25px;
+}
+
+.features{
+    display:flex;
+    gap:30px;
+    margin:25px 0;
+    flex-wrap:wrap;
+}
+
+.feature h4{
+    font-size:16px;
+    margin-bottom:6px;
+}
+
+.feature p{
+    font-size:14px;
+    color:#666;
+}
+
+.btn{
+    background:#2e7d32;
+    color:white;
+    padding:14px 26px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:500;
+    margin-right:20px;
+}
+
+.link{
+    text-decoration:none;
+    color:#222;
+    font-weight:500;
+}
+
+.hero img{
+    width:350px;
+}
+
+/* ---------- EXPERTISE SECTION ---------- */
+
+.section{
+    padding:70px 8%;
+}
+
+.section h2{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    border-radius:16px;
+    overflow:hidden;
+    width:320px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.06);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    margin-bottom:10px;
+    font-weight:500;
+}
+
+.card p{
+    color:#666;
+    font-size:14px;
+}
+
+/* ---------- CTA SECTION ---------- */
+
+.cta{
+    background:white;
+    margin:40px 8%;
+    border-radius:18px;
+    padding:50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.cta img{
+    width:300px;
+    border-radius:12px;
+}
+
+.cta-text{
+    max-width:450px;
+}
+
+.cta-text h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.cta-btn{
+    margin-top:20px;
+    padding:12px 24px;
+    border-radius:25px;
+    border:1px solid #ccc;
+    background:white;
+    cursor:pointer;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    background:#f1f1f1;
+    padding:50px 8%;
+    margin-top:40px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+}
+
+footer h4{
+    margin-bottom:12px;
+}
+
+footer ul{
+    list-style:none;
+}
+
+footer li{
+    margin-bottom:8px;
+    color:#555;
+    font-size:14px;
+}
+
+.copyright{
+    text-align:center;
+    margin-top:30px;
+    color:#777;
+    font-size:13px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a class="active">Start investing</a>
+    <a>Save for retirement</a>
+    <a>Save for health care</a>
+    <a>Invest for a child</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+<div class="hero-text">
+<h1>Invest smart from the start with a brokerage account</h1>
+
+<div class="features">
+<div class="feature">
+<h4>$0 account fees</h4>
+<p>Keep your money working toward your goals.</p>
+</div>
+
+<div class="feature">
+<h4>$0 commissions</h4>
+<p>Trade US stocks & ETFs commission free.</p>
+</div>
+
+<div class="feature">
+<h4>Trade any amount</h4>
+<p>Buy stocks with fractional shares.</p>
+</div>
+</div>
+
+<a href="#" class="btn">Open a brokerage account</a>
+<a href="#" class="link">Explore ways to invest →</a>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="App Preview">
+
+</section>
+
+<!-- EXPERTISE -->
+<section class="section">
+<h2>Expertise you can act on</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<div class="card-content">
+<h3>3 ways to use your health savings account</h3>
+<p>Know the type of HSA user you are and make your money work harder.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1556157382-97eda2d62296">
+<div class="card-content">
+<h3>Market Sense: Weekly insights</h3>
+<p>Experts discuss market headlines and what they mean for you.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8">
+<div class="card-content">
+<h3 style="color:#2e7d32;">How to start investing</h3>
+<p>It doesn't have to be complicated. Here's how to begin.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+
+<img src="https://images.unsplash.com/photo-1551650975-87deedd944c3">
+
+<div class="cta-text">
+<h3>Looking for something else?</h3>
+<p>Answer a few questions about your goals and we'll show account options that could work for you.</p>
+<button class="cta-btn">Get started</button>
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h4>Investing</h4>
+<ul>
+<li>Mutual Funds</li>
+<li>ETFs</li>
+<li>Stocks</li>
+<li>Bonds</li>
+<li>Crypto</li>
+</ul>
+</div>
+
+<div>
+<h4>Trading</h4>
+<ul>
+<li>Online Trading</li>
+<li>Options</li>
+<li>Direct Indexing</li>
+<li>Annuities</li>
+</ul>
+</div>
+
+<div>
+<h4>Planning</h4>
+<ul>
+<li>Retirement Planning</li>
+<li>529 Plans</li>
+<li>Health Savings</li>
+<li>Charitable Giving</li>
+</ul>
+</div>
+
+<div>
+<h4>Stay Connected</h4>
+<ul>
+<li>Instagram</li>
+<li>LinkedIn</li>
+<li>YouTube</li>
+<li>Twitter</li>
+</ul>
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 Investment Platform — AYUSH SINGH Demo
+</div>
+
+</footer>
+
+</body>
+</html>
